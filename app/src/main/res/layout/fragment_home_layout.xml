@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp44">
+
+        <ImageView
+            android:id="@+id/home_sort"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp18"
+            android:src="@mipmap/sort_icon" />
+
+        <ImageView
+            android:id="@+id/home_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dp18"
+            android:src="@mipmap/home_msg_icon" />
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/home_tab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_marginRight="@dimen/dp10"
+            android:layout_toLeftOf="@id/home_msg"
+            android:layout_toRightOf="@id/home_sort" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/home_searsh"
+        android:layout_marginBottom="@dimen/dp15"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp30"
+        android:layout_marginLeft="@dimen/dp16"
+        android:layout_marginRight="@dimen/dp16"
+        android:layout_marginTop="@dimen/dp7"
+        android:background="@drawable/circle_gray_ef"
+        >
+
+        <TextView
+            android:layout_centerInParent="true"
+            android:drawablePadding="@dimen/dp10"
+            android:drawableLeft="@mipmap/searsh_icon"
+            android:gravity="center"
+            android:text="@string/search_str"
+            android:textColor="@color/gray_989"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/home_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+</LinearLayout>

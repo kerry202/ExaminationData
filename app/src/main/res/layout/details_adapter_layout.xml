@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/circle_white"
+    android:layout_marginLeft="@dimen/dp10"
+    android:layout_marginRight="@dimen/dp10"
+    android:layout_marginTop="@dimen/dp15"
+    android:orientation="horizontal"
+    android:layout_centerInParent="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_marginLeft="@dimen/dp18"
+        android:layout_gravity="center_vertical"
+        android:layout_width="@dimen/dp80"
+        android:layout_height="@dimen/dp80"
+        android:src="@mipmap/orange_logo"
+        />
+
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/dp10"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/dp10"
+        android:layout_marginRight="@dimen/dp18"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:text="测试测试测试测试测试测试测试测试"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/gray_333"
+            android:textSize="15dp"
+            />
+
+        <TextView
+            android:layout_marginTop="@dimen/dp10"
+            android:text="测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/gray_666"
+            android:textSize="@dimen/dp12"
+            />
+
+
+        <RelativeLayout
+            android:layout_marginBottom="@dimen/dp10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:layout_marginTop="@dimen/dp9"
+                android:text="12211阅读 . 200评论"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/gray_666"
+                android:textSize="@dimen/dp10"
+                />
+
+            <TextView
+                android:layout_marginRight="@dimen/dp17"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="@dimen/dp9"
+                android:text="#经验帖#"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/price_red"
+                android:textSize="@dimen/dp10"
+                />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
+
+

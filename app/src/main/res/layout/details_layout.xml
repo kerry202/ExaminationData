@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <RelativeLayout
+        android:id="@+id/details_head_rl"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp44"
+        >
+        <RelativeLayout
+            android:id="@+id/details_back"
+            android:layout_width="@dimen/dp44"
+            android:layout_height="@dimen/dp44">
+            <ImageView
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/arrows_icon"
+                />
+        </RelativeLayout>
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/details_tab"
+            android:layout_centerInParent="true"
+            android:layout_width="@dimen/dp145"
+            android:layout_height="wrap_content"
+            />
+
+    </RelativeLayout>
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/details_buttom_rl"
+        android:background="@color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp64">
+
+        <TextView
+            android:id="@+id/details_shared_tv"
+            android:drawablePadding="@dimen/dp5"
+            android:drawableTop="@mipmap/shaerd_icon"
+            android:layout_marginLeft="@dimen/dp25"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/shared_str"
+            android:textColor="@color/gray_333"
+            />
+
+        <TextView
+            android:layout_toRightOf="@id/details_shared_tv"
+            android:id="@+id/details_colletion_tv"
+            android:drawablePadding="@dimen/dp5"
+            android:drawableTop="@mipmap/colletion_icon"
+            android:layout_marginLeft="@dimen/dp25"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/colletion_str"
+            android:textColor="@color/gray_333"
+            />
+
+        <TextView
+            android:layout_toRightOf="@id/details_colletion_tv"
+            android:id="@+id/details_msg_tv"
+            android:drawablePadding="@dimen/dp5"
+            android:drawableTop="@mipmap/private_msg_icon"
+            android:layout_marginLeft="@dimen/dp25"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/private_msg_str"
+            android:textColor="@color/gray_333"
+            />
+        <Button
+            android:id="@+id/go_buy"
+            android:textColor="@color/white"
+            android:layout_marginLeft="@dimen/dp25"
+            android:layout_toRightOf="@+id/details_msg_tv"
+            android:background="@drawable/circle_red"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp40"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dp16"
+            android:text="@string/go_buy_str"
+            android:gravity="center"
+            />
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/details_viewpager"
+        android:layout_below="@id/details_head_rl"
+        android:layout_above="@id/details_buttom_rl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+</RelativeLayout>
