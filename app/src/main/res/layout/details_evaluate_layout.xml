@@ -19,7 +19,8 @@
 
         <View
             android:layout_width="@dimen/dp2"
-            android:layout_height="@dimen/dp16"
+            android:layout_height="@dimen/dp11"
+            android:layout_gravity="center_vertical"
             android:background="@color/price_red" />
 
         <TextView

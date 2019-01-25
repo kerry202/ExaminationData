@@ -18,4 +18,7 @@
     <string name="go_buy_str">去购买</string>
     <string name="add_follow">+关注</string>
     <string name="okbuy_str">购买确认</string>
+    <string name="test">测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试</string>
+    <string name="send_str">发布</string>
+    <string name="send_goods">发送商品</string>
 </resources>

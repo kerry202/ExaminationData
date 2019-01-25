@@ -13,7 +13,8 @@
         <RelativeLayout
             android:id="@+id/okbuy_back"
             android:layout_width="@dimen/dp44"
-            android:layout_height="@dimen/dp44">
+            android:layout_height="@dimen/dp44"
+            android:layout_marginLeft="@dimen/dp10">
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -43,12 +44,12 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="@dimen/dp48"
-        android:layout_marginTop="@dimen/dp15"
         android:orientation="horizontal">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
             android:layout_marginLeft="@dimen/dp18"
             android:text="收货人"
             android:textColor="@color/gray_666"
@@ -57,6 +58,7 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
             android:layout_marginLeft="@dimen/dp104"
             android:layout_marginRight="@dimen/dp16"
             android:layout_toLeftOf="@+id/line"
@@ -64,7 +66,7 @@
             android:hint="用户姓名"
             android:maxLength="6"
             android:textColor="@color/gray_333"
-            android:textSize="@dimen/dp20" />
+            android:textSize="@dimen/dp15" />
 
     </RelativeLayout>
 
@@ -78,12 +80,12 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="@dimen/dp48"
-        android:layout_marginTop="@dimen/dp15"
         android:orientation="horizontal">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
             android:layout_marginLeft="@dimen/dp18"
             android:text="联系电话"
             android:textColor="@color/gray_666"
@@ -92,6 +94,7 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
             android:layout_marginLeft="@dimen/dp104"
             android:layout_marginRight="@dimen/dp16"
             android:layout_toLeftOf="@+id/line"
@@ -100,7 +103,7 @@
             android:inputType="number"
             android:maxLength="11"
             android:textColor="@color/gray_333"
-            android:textSize="@dimen/dp20" />
+            android:textSize="@dimen/dp15" />
 
     </RelativeLayout>
 
@@ -114,28 +117,30 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="@dimen/dp48"
-        android:layout_marginTop="@dimen/dp15"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:visibility="gone">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
             android:layout_marginLeft="@dimen/dp18"
             android:text="所在地"
             android:textColor="@color/gray_666"
             android:textSize="@dimen/dp15" />
 
-        <EditText
+        <TextView
+            android:id="@+id/address_tv"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
             android:layout_marginLeft="@dimen/dp104"
             android:layout_marginRight="@dimen/dp16"
             android:layout_toLeftOf="@+id/line"
-            android:background="@null"
             android:hint="北京 北京市 海定区"
             android:maxLength="11"
             android:textColor="@color/gray_333"
-            android:textSize="@dimen/dp20" />
+            android:textSize="@dimen/dp15" />
 
     </RelativeLayout>
 
@@ -148,7 +153,7 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="@dimen/dp71"
+        android:layout_height="@dimen/dp56"
         android:layout_marginTop="@dimen/dp15"
         android:orientation="horizontal">
 
@@ -170,7 +175,7 @@
             android:hint="海定区xxxxxxxxxxxxxxxxxxxxx"
             android:maxLines="2"
             android:textColor="@color/gray_333"
-            android:textSize="@dimen/dp20" />
+            android:textSize="@dimen/dp15" />
 
     </RelativeLayout>
 
@@ -238,20 +243,19 @@
 
             <ImageView
                 android:id="@+id/okbuy_reduce"
-                android:layout_gravity="center_vertical"
-                android:src="@mipmap/reduce_icon"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
                 android:layout_weight="1"
-                 />
+                android:src="@mipmap/reduce_icon" />
 
             <EditText
-                android:gravity="center"
-                android:layout_gravity="center_vertical"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
                 android:layout_weight="1"
                 android:background="@null"
+                android:gravity="center"
                 android:hint="10"
                 android:inputType="number"
                 android:textColor="@color/gray_333"
@@ -259,12 +263,11 @@
 
             <ImageView
                 android:id="@+id/okbuy_add"
-                android:layout_gravity="center_vertical"
-                android:src="@mipmap/add_icon"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
                 android:layout_weight="1"
-                />
+                android:src="@mipmap/add_icon" />
         </LinearLayout>
 
     </RelativeLayout>
@@ -275,24 +278,24 @@
         android:background="@color/gray_5" />
 
     <RelativeLayout
-        android:layout_marginTop="@dimen/dp17"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/dp17">
 
         <TextView
-            android:layout_marginLeft="@dimen/dp15"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp15"
             android:text="配送方式"
             android:textColor="@color/gray_333"
             android:textSize="@dimen/dp15"
             android:textStyle="bold" />
 
         <TextView
-            android:layout_marginRight="@dimen/dp17"
-            android:layout_alignParentRight="true"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dp17"
             android:text="快递 包邮"
             android:textColor="@color/gray_666"
             android:textSize="@dimen/dp12" />
@@ -301,40 +304,39 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="@dimen/dp49"
-            android:layout_alignParentBottom="true"
-            >
+            android:layout_alignParentBottom="true">
 
             <TextView
-                android:layout_centerVertical="true"
-                android:layout_marginLeft="@dimen/dp15"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp15"
                 android:text="总计："
                 android:textColor="@color/gray_333"
                 android:textSize="@dimen/dp15"
                 android:textStyle="bold" />
 
             <TextView
-                android:layout_centerVertical="true"
-                android:layout_marginLeft="62dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="62dp"
                 android:text="¥ 299.00 "
-                android:textStyle="bold"
                 android:textColor="@color/price_red"
-                android:textSize="@dimen/dp15" />
+                android:textSize="@dimen/dp15"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/go_pay"
-                android:gravity="center"
-                android:background="@color/price_red"
-                android:layout_alignParentRight="true"
                 android:layout_width="135dp"
                 android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:background="@color/price_red"
+                android:gravity="center"
                 android:text="去支付"
-                android:textStyle="bold"
                 android:textColor="@color/white"
-                android:textSize="@dimen/dp15" />
+                android:textSize="@dimen/dp15"
+                android:textStyle="bold" />
         </RelativeLayout>
 
     </RelativeLayout>

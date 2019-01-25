@@ -1,10 +1,10 @@
 apply plugin: 'com.android.application'
-
+def rootProjFilePath = rootProject.getProjectDir().getAbsolutePath();
 android {
     compileSdkVersion 28
     defaultConfig {
-        applicationId "com.test.orange"
-        minSdkVersion 16
+        applicationId "com.youyicheng.KaoLiao"
+        minSdkVersion 21
         targetSdkVersion 28
         versionCode 1
         versionName "1.0"
@@ -16,6 +16,23 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+
+    signingConfigs {
+        debug {
+            keyAlias 'key'
+            keyPassword 'key2019'
+            storeFile file(rootProjFilePath + '/app/orangekey.jks')
+            storePassword 'key2019'
+        }
+
+        release {
+            keyAlias 'key'
+            keyPassword 'key2019'
+            storeFile file(rootProjFilePath + '/app/orangekey.jks')
+            storePassword 'key2019'
+        }
+    }
+
 }
 
 dependencies {
@@ -26,10 +43,9 @@ dependencies {
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
     //retrofit2 gson
-    api 'com.squareup.retrofit2:retrofit:2.3.0'
-    api 'com.lzy.net:okgo:2.1.3'
-    api 'com.google.code.gson:gson:2.8.0'
-
+    implementation 'com.squareup.retrofit2:retrofit:2.3.0'
+    implementation 'com.lzy.net:okgo:2.1.3'
+    implementation 'com.google.code.gson:gson:2.8.0'
     //    testCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.5.1'  //检测内存泄漏工具
     implementation 'com.android.support:multidex:1.0.1'
     implementation 'com.android.support:recyclerview-v7:28+'
@@ -44,4 +60,5 @@ dependencies {
     //SmartRefreshLayout
     implementation 'com.scwang.smartrefresh:SmartRefreshHeader:1.0.5.1'
     implementation project(':baseholder')
+    implementation 'com.kaopiz:kprogresshud:1.0.5'
 }

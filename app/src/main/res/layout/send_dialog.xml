@@ -21,6 +21,7 @@
         >
 
         <TextView
+            android:id="@+id/experience_home_tv"
             android:gravity="center"
             android:text="@string/experience_str"
             android:drawableTop="@mipmap/experience_icon"
@@ -33,6 +34,7 @@
             android:layout_height="wrap_content" />
 
         <TextView
+            android:id="@+id/consultation_home_tv"
             android:drawablePadding="@dimen/dp5"
             android:gravity="center"
             android:text="@string/consultation_str"
@@ -45,6 +47,7 @@
             android:layout_height="wrap_content" />
 
         <TextView
+            android:id="@+id/data_home_tv"
             android:drawablePadding="@dimen/dp5"
             android:gravity="center"
             android:text="@string/data_str"
